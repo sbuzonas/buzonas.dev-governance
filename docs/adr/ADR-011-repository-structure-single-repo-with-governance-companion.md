@@ -1,7 +1,7 @@
 # ADR-011: Repository Structure — Single Site Repo with Governance Companion
 
 **Date:** 2026-06-29
-**Status:** Accepted
+**Status:** Superseded in part by [ADR-016](ADR-016-governance-submodule-in-site-repo.md) — consequences clause only ("CLAUDE.md should reference by URL")
 
 ## Context
 

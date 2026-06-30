@@ -21,11 +21,12 @@
 | [ADR-008](docs/adr/ADR-008-next-mdx-over-next-mdx-remote.md) | @next/mdx over next-mdx-remote | Accepted |
 | [ADR-009](docs/adr/ADR-009-staging-environment-deferred.md) | Staging Environment Deferred — GitHub Pages Limitation | Accepted |
 | [ADR-010](docs/adr/ADR-010-svg-strategy-hybrid-inline-and-static.md) | SVG Strategy — Hybrid Inline and Static | Accepted |
-| [ADR-011](docs/adr/ADR-011-repository-structure-single-repo-with-governance-companion.md) | Repository Structure — Single Repo with Governance Companion | Accepted |
+| [ADR-011](docs/adr/ADR-011-repository-structure-single-repo-with-governance-companion.md) | Repository Structure — Single Repo with Governance Companion | Superseded in part (ADR-016) |
 | [ADR-012](docs/adr/ADR-012-fancyguy-technologies-as-dba.md) | FancyGuy Technologies as DBA under buzonas.dev | Accepted |
 | [ADR-013](docs/adr/ADR-013-madr-format-for-decision-records.md) | MADR Format for Decision Records | Accepted |
 | [ADR-014](docs/adr/ADR-014-blog-slug-route-deferred.md) | Blog Dynamic Route (`/blog/[slug]`) Deferred Until First Post — Next.js Static Export Limitation | Accepted |
 | [ADR-015](docs/adr/ADR-015-consulting-architectures-slug-deferred.md) | Consulting Architecture Route (`/consulting/architectures/[slug]`) Deferred — Same Root Cause as ADR-014 | Accepted |
+| [ADR-016](docs/adr/ADR-016-governance-submodule-in-site-repo.md) | Governance Repo Included as Git Submodule in Site Repo | Accepted |
 
 ---
 

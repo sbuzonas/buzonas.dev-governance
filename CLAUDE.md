@@ -39,10 +39,10 @@ This repository governs the `buzonas.dev` portfolio site and any future in-scope
 
 ## 5. ADR Conventions (This Domain)
 
-- **Format:** MADR — Context, Decision, Rationale, Consequences, Alternatives Considered. See [ADR-013](docs/adr/013-madr-format-for-decision-records.md).
+- **Format:** MADR — header block (`Date`, `Status`, and optionally `Supersedes`) followed by body sections: Context, Decision, Rationale, Consequences, Alternatives Considered. See [ADR-013](docs/adr/ADR-013-madr-format-for-decision-records.md).
 - **Location:** One file per decision in `docs/adr/`, named `ADR-NNN-short-title-slug.md`, zero-padded to three digits. The `ADR-` prefix is kept in the filename (not just the directory) so individual records remain self-identifying in file-tool searches, editor tabs, and anywhere the `docs/adr/` path context isn't visible.
 - **Numbering:** Sequential within this governance domain (buzonas.dev portfolio), starting at 001. Before creating a new ADR, check the highest-numbered file in `docs/adr/` to determine the next number — do not rely on a hardcoded count in this file. Do not renumber existing ADRs.
-- **Immutability:** An `Accepted` ADR's Context/Decision/Rationale is not edited after the fact to reflect new thinking — that's what a new ADR is for. If a later decision changes or reverses an earlier one, write a new ADR, and update the *old* ADR's **Status** field to `Superseded` with a link to the replacement. The historical record stays intact.
+- **Immutability:** An `Accepted` ADR's Context/Decision/Rationale is not edited after the fact to reflect new thinking — that's what a new ADR is for. If a later decision changes or reverses an earlier one, write a new ADR with a `**Supersedes:** ADR-NNN` line in the header block, and update the *old* ADR's **Status** field to `Superseded by [ADR-NNN](ADR-NNN-slug.md)`. Both directions link to each other. The historical record stays intact.
 - **Index discipline:** Every new ADR file must be added to the table in `ADRs.md` in the same change. An ADR that exists only in `docs/adr/` and not in the index is incomplete.
 
 ## 6. Relationship to the Site Repository
