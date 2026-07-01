@@ -1,10 +1,10 @@
 # Product Requirements Document
 ## buzonas.dev — Personal Portfolio & Professional Brand Site
 
-**Version:** 1.0
+**Version:** 1.1
 **Owner:** Steve Buzonas
-**Status:** Draft — Awaiting Review
-**Last Updated:** 2026-06-29
+**Status:** Accepted
+**Last Updated:** 2026-07-01
 **Tracking:** GitHub Issues + Projects
 
 ---
@@ -289,6 +289,7 @@ FancyGuy Technologies is a formal LLC — the name is fixed. This decision is ca
 
 ### Phase 0 — Foundation (Pre-Launch Infrastructure)
 - Repository setup and governance documentation
+- **Design guide finalized — blocking dependency.** The visual identity (colors, typography, wordmark, signature composition elements) went through extensive iteration against the real Canva reference asset (2026-06-30 working session) and produced a draft proof (`brand-guidelines-showcase.html`, hand-built HTML/SVG). That draft validated the values but was explicitly not treated as production-ready — see the companion design-system PRD for the plan to formalize it into a living component playground. **Phase 1 MVP build does not start until this is finalized**, since brand tokens, the wordmark treatment, and the signature visual elements (hex lattice, hex-tiled mountain accent, treeline silhouette) are direct inputs to `globals.css`, `tailwind.config.ts`, and the `AppalachianSilhouette`/`HexLattice`/`HexGrid` components (see ADR-010, component-inventory.md §7.5–7.7).
 - Tailwind + shadcn/ui configuration
 - Brand tokens implemented
 - CI/CD pipeline (GitHub Actions)
