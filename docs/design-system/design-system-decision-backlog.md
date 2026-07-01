@@ -6,7 +6,7 @@
 
 This is not an ADR and does not carry a version number in the sense CLAUDE.md §4 defines — it is a working list, expected to change shape as decisions are made and new questions surface. Per CLAUDE.md §8, nothing in this document is a decision. It exists to track what's still open, what background exists for each question, and what previously-drafted material is available to draw alternatives from — not to pre-select an answer.
 
-Four ADR-numbered drafts were produced before this PRD was accepted, in violation of the PRD → ADR → TAD sequence CLAUDE.md §8 now documents. They have been retired: **the numbers 017–020 were released** — no ADR in the real `docs/adr/` sequence had ever reached them. ADR-017 (repository & distribution topology), ADR-018 (component substrate & theme mechanism), ADR-019 (component workshop & documentation tool), and ADR-020 (Storybook hosting) have since been assigned to real decisions; all of 017–020 are now used, so the next real ADR takes 021. The retired drafts are kept below, in an appendix, as background material only — their Context and Alternatives Considered sections contain research worth reusing; their Decision sections do not carry any authority and should not be treated as a starting default.
+Four ADR-numbered drafts were produced before this PRD was accepted, in violation of the PRD → ADR → TAD sequence CLAUDE.md §8 now documents. They have been retired: **the numbers 017–020 were released** — no ADR in the real `docs/adr/` sequence had ever reached them. ADR-017 (repository & distribution topology), ADR-018 (component substrate & theme mechanism), ADR-019 (component workshop & documentation tool), ADR-020 (Storybook hosting), and ADR-021 (unified subproject governance topology) have since been assigned to real decisions; all of 017–021 are now used, so the next real ADR takes 022. The retired drafts are kept below, in an appendix, as background material only — their Context and Alternatives Considered sections contain research worth reusing; their Decision sections do not carry any authority and should not be treated as a starting default.
 
 ---
 
@@ -14,14 +14,13 @@ Four ADR-numbered drafts were produced before this PRD was accepted, in violatio
 
 | # | Decision Point | PRD §6 Ref | Status | Background Available | Validity of Retired Draft's Conclusion |
 |---|---|---|---|---|---|
-| 5 | Where this system's documentation and decision history is governed | Q5 | Open | Former draft ADR-017 (Appendix A, touched on briefly) | The retired draft asserted governance folds into the existing `buzonas.dev-governance` repo, citing the "unified governance domain" principle, but did not seriously weigh alternatives before concluding. Treat as open; the reasoning is worth re-examining, not the conclusion. |
 | 7 | How the brand guide is delivered — deployment topology and placement of brand-specific content | Feeds §3.1 | Open | Former draft ADR-020 (Appendix D); ADR-019 (tooling settled) | **Tooling is settled by ADR-019** — the brand guide is authored with Storybook Docs (MDX). What remains open is **delivery**, which is a downstream brand implementation's right, not forced upstream: whether a single theme-switching Storybook serves all brands versus per-brand deployments; and where brand-specific guide content lives (placing it in the brand-neutral core feels wrong, while standing up a guide per brand feels heavy). Weigh a possible upstream capability that packages brand guides so several coexist in one hosting solution. A delivery choice favoring a single combined deployment could require a new ADR superseding ADR-017's per-brand branding-site consequence. |
 
 ---
 
 ## How This Gets Worked
 
-Per CLAUDE.md §8/§9: one decision at a time, owner decides, assistant presents alternatives and tradeoffs. Questions 1 and 4 (repository/distribution topology) are resolved by ADR-017, Question 3 (theme mechanism) by ADR-018, Question 2 (component workshop + documentation tool) by ADR-019, and Question 6 (deployment/hosting) by ADR-020. The only live open item is Question 7 (brand-guide delivery); Question 5 (governance placement) remains intentionally deferred until the surrounding decisions settle.
+Per CLAUDE.md §8/§9: one decision at a time, owner decides, assistant presents alternatives and tradeoffs. Questions 1 and 4 (repository/distribution topology) are resolved by ADR-017, Question 3 (theme mechanism) by ADR-018, Question 2 (component workshop + documentation tool) by ADR-019, Question 6 (deployment/hosting) by ADR-020, and Question 5 (governance placement) by ADR-021. The only remaining open item is Question 7 (brand-guide delivery).
 
 When a row here gets decided, it becomes a real ADR (numbered from whatever `docs/adr/` actually contains at that time) and is removed from this table, not left duplicated in both places.
 
