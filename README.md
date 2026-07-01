@@ -14,6 +14,8 @@ Per [ADR-011](docs/ADRs.md#adr-011), application code, content, and structured d
 |----------|---------|
 | [`portfolio-PRD.md`](docs/portfolio/portfolio-PRD.md) | Product Requirements Document — purpose, audiences, section specs, release phases |
 | [`portfolio-TAD.md`](docs/portfolio/portfolio-TAD.md) | Technical Architecture Document — stack, repo structure, routing, CI/CD pipeline design |
+| [`design-system-PRD.md`](docs/design-system/design-system-PRD.md) | Design System PRD — vision, audiences, requirements, release phases |
+| [`design-system-decision-backlog.md`](docs/design-system/design-system-decision-backlog.md) | Design system open architectural questions and background from retired drafts |
 | [`ADRs.md`](docs/ADRs.md) | Index of Architectural Decision Records — links to individual records in [`docs/adr/`](docs/adr/) |
 | [`docs/adr/`](docs/adr/) | Individual MADR-format decision records, one file per decision |
 | [`buzonas-brand-guide.md`](buzonas-brand-guide.md) | Brand identity — color system, typography, signature visual elements, voice & tone |
