@@ -6,16 +6,16 @@ This repository is the single source of truth for *why* buzonas.dev is built the
 
 ## Why a Separate Repository
 
-Per [ADR-011](ADRs.md#adr-011), application code, content, and structured data are co-located with the site (they share a build pipeline and deploy target). Governance documents don't share that pipeline — they're planning and decision artifacts, not build inputs. Separating them lets this repo serve as a standalone context source: an AI coding assistant working in the site repo reads `CLAUDE.md` here before generating any code, without governance docs cluttering the application tree.
+Per [ADR-011](docs/ADRs.md#adr-011), application code, content, and structured data are co-located with the site (they share a build pipeline and deploy target). Governance documents don't share that pipeline — they're planning and decision artifacts, not build inputs. Separating them lets this repo serve as a standalone context source: an AI coding assistant working in the site repo reads `CLAUDE.md` here before generating any code, without governance docs cluttering the application tree.
 
 ## Documents
 
 | Document | Purpose |
 |----------|---------|
-| [`PRD.md`](PRD.md) | Product Requirements Document — purpose, audiences, section specs, release phases |
-| [`TAD.md`](TAD.md) | Technical Architecture Document — stack, repo structure, routing, CI/CD pipeline design |
-| [`ADRs.md`](ADRs.md) | Index of Architectural Decision Records — links to individual records in [`docs/adr/`](docs/adr/) |
-| [`docs/adr/`](docs/adr/) | Individual MADR-format decision records, one file per decision (13 records) |
+| [`portfolio-PRD.md`](docs/portfolio/portfolio-PRD.md) | Product Requirements Document — purpose, audiences, section specs, release phases |
+| [`portfolio-TAD.md`](docs/portfolio/portfolio-TAD.md) | Technical Architecture Document — stack, repo structure, routing, CI/CD pipeline design |
+| [`ADRs.md`](docs/ADRs.md) | Index of Architectural Decision Records — links to individual records in [`docs/adr/`](docs/adr/) |
+| [`docs/adr/`](docs/adr/) | Individual MADR-format decision records, one file per decision |
 | [`buzonas-brand-guide.md`](buzonas-brand-guide.md) | Brand identity — color system, typography, signature visual elements, voice & tone |
 | [`component-inventory.md`](component-inventory.md) | Full page and component specification — props, data sources, MVP status |
 | [`CLAUDE.md`](CLAUDE.md) | AI context for working **in this repository** — document conventions, ADR process, relationship to the site repo |

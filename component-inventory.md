@@ -5,7 +5,7 @@
 **Owner:** Steve Buzonas
 **Status:** Draft — Awaiting Review
 **Last Updated:** 2026-06-29
-**Companion Documents:** PRD.md, TAD.md, ADRs.md, buzonas-brand-guide.md
+**Companion Documents:** docs/portfolio/portfolio-PRD.md, docs/portfolio/portfolio-TAD.md, docs/ADRs.md, buzonas-brand-guide.md
 
 ---
 
