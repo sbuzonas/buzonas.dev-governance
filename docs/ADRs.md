@@ -27,6 +27,10 @@
 | [ADR-014](docs/adr/ADR-014-blog-slug-route-deferred.md) | Blog Dynamic Route (`/blog/[slug]`) Deferred Until First Post — Next.js Static Export Limitation | Accepted |
 | [ADR-015](docs/adr/ADR-015-consulting-architectures-slug-deferred.md) | Consulting Architecture Route (`/consulting/architectures/[slug]`) Deferred — Same Root Cause as ADR-014 | Accepted |
 | [ADR-016](docs/adr/ADR-016-governance-submodule-in-site-repo.md) | Governance Repo Included as Git Submodule in Site Repo | Accepted |
+| [ADR-017](docs/adr/ADR-017-design-system-repository-and-distribution-topology.md) | Design System Repository & Distribution Topology | Accepted |
+| [ADR-018](docs/adr/ADR-018-design-system-component-substrate-and-theme-mechanism.md) | Design System Component Substrate & Theme Mechanism | Accepted |
+| [ADR-019](docs/adr/ADR-019-storybook-as-component-workshop-and-docs.md) | Storybook as the Design System Component Workshop & Documentation Tool | Accepted |
+| [ADR-020](docs/adr/ADR-020-design-system-storybook-hosting-on-github-pages.md) | Design System Storybook Hosting on GitHub Pages | Accepted |
 
 ---
 

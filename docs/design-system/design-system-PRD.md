@@ -1,7 +1,7 @@
 # Product Requirements Document
 ## buzonas.dev Design System — Living Brand Guide & Component Playground
 
-**Version:** 1.0
+**Version:** 1.1
 **Owner:** Steve Buzonas
 **Status:** Accepted
 **Last Updated:** 2026-07-01
@@ -56,6 +56,8 @@ A living design system — brand reference and component development space in on
 ### 2.3 Tertiary Audience — Future Consuming Projects
 
 **Goal:** Any future project — of any kind, not limited to a predetermined list — should be able to consume this system's components and plug in its own visual theme without requiring changes to component logic.
+
+At least one additional, differently-branded consumer beyond buzonas.dev is already committed — not a hypothetical to evaluate later. Theme-independence (§3.4) is therefore a present design driver, not a future contingency: the system is built multi-brand from the outset, with the buzonas.dev identity as the first theme plugged in rather than the only one.
 
 ---
 
@@ -123,7 +125,7 @@ The system must be able to be built and deployed as a standalone, static artifac
 
 ### Phase 3 — Growth
 - Release cadence fully independent of any consuming project, versioned on its own schedule
-- Evaluate demand for a second theme or a second consuming project
+- Onboard the second, differently-branded theme — a known, committed consumer (§2.3), not a demand to be evaluated — proving theme-independence (§3.4) holds against a real second brand
 - Evaluate whether the component-distribution mechanism chosen at Phase 0 still fits at greater scale
 
 ---
@@ -161,5 +163,5 @@ These are not resolved by this document. They are surfaced here because they are
 
 ---
 
-*Design System PRD v1.0 — buzonas.dev Design System*
+*Design System PRD v1.1 — buzonas.dev Design System*
 *Architectural decisions arising from this document are recorded separately, once scope here is agreed.*
