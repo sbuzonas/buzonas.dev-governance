@@ -1,10 +1,10 @@
 # Product Requirements Document
 ## buzonas.dev Design System — Living Brand Guide & Component Playground
 
-**Version:** 1.1
+**Version:** 1.2
 **Owner:** Steve Buzonas
 **Status:** Accepted
-**Last Updated:** 2026-07-01
+**Last Updated:** 2026-07-02
 **Companion Documents:** docs/portfolio/portfolio-PRD.md, buzonas-brand-guide.md
 **Tracking:** GitHub Issues + Projects
 
@@ -82,6 +82,10 @@ At least one additional, differently-branded consumer beyond buzonas.dev is alre
 ### 3.5 Consumability
 
 **Requirement:** Components built in this system must be usable by a consuming project (the buzonas.dev portfolio site or otherwise) without modification to component logic — at minimum, whatever integration mechanism is chosen must not require a consuming project to fork or rewrite a component to use it.
+
+### 3.6 Decoupled Brand-Theme Authoring
+
+**Requirement:** It must be possible to author and iterate a specific brand's theme against the core's real components and documentation toolchain **without the core acquiring any dependency on that brand — not even a development-time one.** Brand values are supplied to the workshop locally by whoever is iterating on them; the core declares no brand dependency. This keeps the theme-agnostic core (§3.4) and its independent cadence (§1.2) intact while still letting brand theming benefit from the core toolchain.
 
 ---
 
@@ -163,5 +167,5 @@ These are not resolved by this document. They are surfaced here because they are
 
 ---
 
-*Design System PRD v1.1 — buzonas.dev Design System*
+*Design System PRD v1.2 — buzonas.dev Design System*
 *Architectural decisions arising from this document are recorded separately, once scope here is agreed.*

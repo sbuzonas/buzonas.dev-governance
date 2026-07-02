@@ -33,6 +33,10 @@
 | [ADR-020](docs/adr/ADR-020-design-system-storybook-hosting-on-github-pages.md) | Design System Storybook Hosting on GitHub Pages | Accepted |
 | [ADR-021](docs/adr/ADR-021-unified-subproject-governance-topology.md) | Governance Topology — Unified Subproject Governance in the Companion Repo | Accepted |
 | [ADR-022](docs/adr/ADR-022-design-system-monorepo-tooling.md) | Design System Monorepo Tooling — pnpm, Turborepo, Changesets | Accepted |
+| [ADR-023](docs/adr/ADR-023-design-system-package-registry-and-namespace.md) | Design System Package Registry & Namespace — Public npm under @sbuzonas | Accepted |
+| [ADR-024](docs/adr/ADR-024-design-system-reference-theme-and-brand-free-core.md) | Design System Reference Theme & Brand-Free Core | Accepted |
+| [ADR-025](docs/adr/ADR-025-design-system-component-style-delivery-scan-first.md) | Design System Component Style Delivery — Scan-First with Prebuilt Fallback | Accepted |
+| [ADR-026](docs/adr/ADR-026-design-system-rsc-contract-granular-client-boundaries.md) | Design System Server/Client (RSC) Contract — Library-Owned Granular Client Boundaries | Accepted |
 
 ---
 
