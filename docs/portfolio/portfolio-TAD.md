@@ -3,9 +3,9 @@
 
 **Version:** 1.0
 **Owner:** Steve Buzonas
-**Status:** Draft — Awaiting Review
-**Last Updated:** 2026-06-29
-**Companion Documents:** PRD.md, buzonas-brand-guide.md
+**Status:** Accepted
+**Last Updated:** 2026-07-01
+**Companion Documents:** docs/portfolio/portfolio-PRD.md, buzonas-brand-guide.md
 
 ---
 
