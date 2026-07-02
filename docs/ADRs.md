@@ -32,6 +32,7 @@
 | [ADR-019](docs/adr/ADR-019-storybook-as-component-workshop-and-docs.md) | Storybook as the Design System Component Workshop & Documentation Tool | Accepted |
 | [ADR-020](docs/adr/ADR-020-design-system-storybook-hosting-on-github-pages.md) | Design System Storybook Hosting on GitHub Pages | Accepted |
 | [ADR-021](docs/adr/ADR-021-unified-subproject-governance-topology.md) | Governance Topology — Unified Subproject Governance in the Companion Repo | Accepted |
+| [ADR-022](docs/adr/ADR-022-design-system-monorepo-tooling.md) | Design System Monorepo Tooling — pnpm, Turborepo, Changesets | Accepted |
 
 ---
 
