@@ -1,10 +1,10 @@
 # Technical Architecture Document
 ## buzonas.dev — Personal Portfolio & Professional Brand Site
 
-**Version:** 1.0
+**Version:** 1.1
 **Owner:** Steve Buzonas
 **Status:** Accepted
-**Last Updated:** 2026-07-01
+**Last Updated:** 2026-07-02
 **Companion Documents:** docs/portfolio/portfolio-PRD.md, buzonas-brand-guide.md
 
 ---
@@ -88,10 +88,10 @@ buzonas.dev/
 │   │   ├── page.tsx            # /blog index
 │   │   └── [slug]/
 │   │       └── page.tsx        # /blog/[slug] MDX post
-│   ├── globals.css             # Tailwind base + CSS custom properties
+│   ├── globals.css             # Tailwind base; brand tokens interim here, from style package (§2.4)
 │   └── not-found.tsx           # 404 page
 ├── components/
-│   ├── ui/                     # shadcn/ui generated components (do not hand-edit)
+│   ├── ui/                     # Design-system core primitives (interim scaffold — consumed as package, §2.4)
 │   ├── layout/
 │   │   ├── Nav.tsx
 │   │   ├── Footer.tsx
@@ -117,8 +117,8 @@ buzonas.dev/
 │   └── shared/
 │       ├── TechTag.tsx
 │       ├── SectionEyebrow.tsx
-│       ├── AppalachianSilhouette.tsx   # SVG component — brand signature element
-│       ├── HexLattice.tsx              # SVG component — geometric network
+│       ├── AppalachianSilhouette.tsx   # buzonas brand asset — moves to the brand style package (§2.4)
+│       ├── HexLattice.tsx              # buzonas brand asset — moves to the brand style package (§2.4)
 │       └── StatusBadge.tsx
 ├── content/
 │   ├── blog/                   # MDX blog posts
@@ -155,6 +155,16 @@ buzonas.dev/
 └── CLAUDE.md                   # AI coding context (see separate document)
 ```
 
+### 2.4 Relationship to the Design System
+
+Per ADR-027, this site is a **consumer** of the buzonas.dev design system, not the owner of its component primitives or brand values:
+
+- **Theme-agnostic component primitives** come from the design-system core, consumed as published packages (ADR-017), rather than generated or hand-owned in this repository.
+- **The buzonas brand tokens and signature visual elements** (treeline silhouette, hex lattice, hex grid) come from the buzonas brand's **style package** — an artifact of the separate buzonas-brand repository (ADR-017), distinct from this site repository.
+- **This repository owns only its composition** — routes, page layouts, section components, content-bound components, and content/data.
+
+The layout in §2.3 reflects an **interim self-contained scaffold**; per ADR-027 it migrates onto the design system's packages as they become available. Until then, brand tokens remain in `app/globals.css` and the primitives remain locally scaffolded. The classification of a few low-complexity shared primitives (the mono tag chip, section eyebrow, status badge) is still open, and they remain site-local for now.
+
 ---
 
 ## 3. Technology Stack
@@ -165,8 +175,8 @@ buzonas.dev/
 |-------|-----------|---------|-----------|
 | Framework | Next.js | 15.x | App Router, static export support, native MDX integration |
 | Language | TypeScript | 5.x | Type safety; required for AI-assisted development at this complexity |
-| Styling | Tailwind CSS | 4.x | Utility-first; pairs cleanly with shadcn/ui; config-driven brand tokens |
-| UI Components | shadcn/ui | Latest | Accessible, unstyled-base components; owned in-repo, not a black-box dependency |
+| Styling | Tailwind CSS | 4.x | Utility-first; scans the design-system component package (ADR-025); brand tokens supplied by the buzonas style package (§2.4) |
+| UI Components | Design-system core (shadcn/Radix substrate) | — | Consumed as published packages (ADR-017/027); the design system owns the source, the site does not re-generate them |
 | MDX | @next/mdx | Latest | First-party Next.js MDX integration; native App Router + RSC support; fewer dependencies than next-mdx-remote |
 
 ### 3.2 Content & Data
@@ -380,7 +390,7 @@ Three rendering contexts require explicit styling:
 
 ### 7.3 CSS Custom Properties
 
-Brand tokens defined in `app/globals.css` as CSS custom properties, mapped to Tailwind via `tailwind.config.ts`:
+Brand tokens are supplied by the buzonas **style package** (ADR-027), applied as CSS custom properties and mapped to Tailwind. During the interim scaffold (§2.4) they remain authored in `app/globals.css`; migration moves them into the consumed style package without changing how components reference them — always by semantic variable, never a concrete value:
 
 ```css
 :root {
@@ -666,5 +676,5 @@ Keep the dependency tree shallow. Every dependency is a maintenance liability. B
 
 ---
 
-*TAD v1.0 — buzonas.dev Portfolio Site*
+*TAD v1.1 — buzonas.dev Portfolio Site*
 *Next document: ADRs*

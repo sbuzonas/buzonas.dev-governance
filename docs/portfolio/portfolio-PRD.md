@@ -1,10 +1,10 @@
 # Product Requirements Document
 ## buzonas.dev — Personal Portfolio & Professional Brand Site
 
-**Version:** 1.1
+**Version:** 1.2
 **Owner:** Steve Buzonas
 **Status:** Accepted
-**Last Updated:** 2026-07-01
+**Last Updated:** 2026-07-02
 **Tracking:** GitHub Issues + Projects
 
 ---
@@ -289,9 +289,8 @@ FancyGuy Technologies is a formal LLC — the name is fixed. This decision is ca
 
 ### Phase 0 — Foundation (Pre-Launch Infrastructure)
 - Repository setup and governance documentation
-- **Design guide finalized — blocking dependency.** The visual identity (colors, typography, wordmark, signature composition elements) went through extensive iteration against the real Canva reference asset (2026-06-30 working session) and produced a draft proof (`brand-guidelines-showcase.html`, hand-built HTML/SVG). That draft validated the values but was explicitly not treated as production-ready — see the companion design-system PRD for the plan to formalize it into a living component playground. **Phase 1 MVP build does not start until this is finalized**, since brand tokens, the wordmark treatment, and the signature visual elements (hex lattice, hex-tiled mountain accent, treeline silhouette) are direct inputs to `globals.css`, `tailwind.config.ts`, and the `AppalachianSilhouette`/`HexLattice`/`HexGrid` components (see ADR-010, component-inventory.md §7.5–7.7).
-- Tailwind + shadcn/ui configuration
-- Brand tokens implemented
+- **Design system delivers the buzonas brand foundation — blocking dependency.** Formalizing the visual identity (colors, typography, wordmark, signature composition elements) with the tooling available at the time was attempted and did not succeed — which is what motivated standing up a dedicated design system (see the companion design-system PRD). The site is a **consumer** of that system, not where its components and brand values are authored: theme-agnostic component primitives come from the design-system core, and the buzonas brand tokens and signature visual elements (hex lattice, hex-tiled mountain accent, treeline silhouette) come from the buzonas brand's style package. **Phase 1 MVP build depends on the design system delivering that foundation.** Per ADR-027, today's self-contained scaffold is interim and migrates onto the design system's packages as they become available.
+- Site build configured to consume the design system (core component packages + buzonas style package)
 - CI/CD pipeline (GitHub Actions)
 - Staging environment configured (GitHub Pages preview branch)
 - `buzonas.dev` domain verified
@@ -444,5 +443,5 @@ Before tagging a production release, verify on staging:
 
 ---
 
-*PRD v1.0 — buzonas.dev Portfolio Site*
+*PRD v1.2 — buzonas.dev Portfolio Site*
 *Next document: Technical Architecture Document*

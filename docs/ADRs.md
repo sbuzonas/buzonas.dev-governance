@@ -37,6 +37,7 @@
 | [ADR-024](docs/adr/ADR-024-design-system-reference-theme-and-brand-free-core.md) | Design System Reference Theme & Brand-Free Core | Accepted |
 | [ADR-025](docs/adr/ADR-025-design-system-component-style-delivery-scan-first.md) | Design System Component Style Delivery — Scan-First with Prebuilt Fallback | Accepted |
 | [ADR-026](docs/adr/ADR-026-design-system-rsc-contract-granular-client-boundaries.md) | Design System Server/Client (RSC) Contract — Library-Owned Granular Client Boundaries | Accepted |
+| [ADR-027](docs/adr/ADR-027-portfolio-design-system-boundary-and-migration.md) | Portfolio Site as Design-System Consumer — Boundary & Migration | Accepted |
 
 ---
 

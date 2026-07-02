@@ -1,10 +1,10 @@
 # Component & Page Inventory
 ## buzonas.dev — Personal Portfolio & Professional Brand Site
 
-**Version:** 1.0
+**Version:** 1.1
 **Owner:** Steve Buzonas
 **Status:** Accepted
-**Last Updated:** 2026-07-01
+**Last Updated:** 2026-07-02
 **Companion Documents:** docs/portfolio/portfolio-PRD.md, docs/portfolio/portfolio-TAD.md, docs/ADRs.md, buzonas-brand-guide.md
 
 ---
@@ -12,6 +12,8 @@
 ## Overview
 
 This inventory defines every page route and React component required for the MVP launch. Components are organized by type: pages (App Router routes), layout components, section components, shared/primitive components, and MDX components. Each entry includes its props interface, data source, and notes for AI-assisted implementation.
+
+**Component ownership (per ADR-027).** This site is a consumer of the buzonas.dev design system. The theme-agnostic UI primitives it builds on come from the design-system core, and the buzonas brand-signature visual elements (§7.5–7.7 — the Appalachian silhouette, hex lattice, hex grid) are **buzonas brand assets** sourced from the brand's style package, not site-owned. The entries below describe the site's composition and its interim scaffold; where a component is a design-system or brand asset it is marked as such. The upstream-vs-site-local classification of the low-complexity shared primitives (§7.1 TechTag, §7.2 SectionEyebrow, §7.3 StatusBadge) is still open — they remain site-local for now.
 
 ### Status Legend
 
@@ -728,6 +730,7 @@ interface MdxContentProps {
 
 **File:** `components/shared/AppalachianSilhouette.tsx`
 **Status:** 🟡 Stub — MVP
+**Ownership:** buzonas brand asset — sourced from the brand style package (ADR-027); the states below describe the site-side interim placeholder.
 
 ```typescript
 interface AppalachianSilhouetteProps {
@@ -744,6 +747,7 @@ interface AppalachianSilhouetteProps {
 
 **File:** `components/shared/HexLattice.tsx`
 **Status:** 🟡 Stub — MVP
+**Ownership:** buzonas brand asset — sourced from the brand style package (ADR-027); the states below describe the site-side interim placeholder.
 
 ```typescript
 interface HexLatticeProps {
@@ -761,6 +765,7 @@ interface HexLatticeProps {
 
 **File:** `components/shared/HexGrid.tsx`
 **Status:** 🟡 Stub — MVP
+**Ownership:** buzonas brand asset — sourced from the brand style package (ADR-027); the states below describe the site-side interim placeholder.
 
 ```typescript
 interface HexGridProps {
@@ -897,5 +902,5 @@ Reads from `data/projects.ts`. `getProjectsWithMdx()` returns only projects wher
 
 ---
 
-*Component & Page Inventory v1.0 — buzonas.dev Portfolio Site*
+*Component & Page Inventory v1.1 — buzonas.dev Portfolio Site*
 *Next document: CLAUDE.md — AI Coding Context*
