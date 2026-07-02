@@ -39,7 +39,7 @@ This repository governs the `buzonas.dev` portfolio site and any future in-scope
 - **Cross-references use relative links within this repo** (e.g., `docs/adr/001-....md`) and **absolute GitHub URLs when referencing the site repo** (per the existing pattern in ADR-011: "CLAUDE.md in `buzonas.dev` should reference governance documents by URL, not relative path").
 - **Don't restate content across documents.** If a fact belongs in the brand guide, it shouldn't also be copied into the PRD. Reference instead of duplicate — duplication is how these documents drift out of sync.
 - **Status fields are load-bearing.** PRD open questions, ADR statuses, and component-inventory MVP markers (🔴/🟡/🟢) are read by both humans and AI assistants to determine what's actually decided versus still open. Don't silently flip a status — change it deliberately and note why.
-- **Document versioning is semantic**, for every document in this repository that carries a version header (portfolio-PRD.md, portfolio-TAD.md, buzonas-brand-guide.md, and any subproject PRD or TAD such as design-system-PRD.md). ADRs are exempt — they don't carry version numbers, they're immutable per §5.
+- **Document versioning is semantic**, for every document in this repository that carries a version header (portfolio-PRD.md, portfolio-TAD.md, buzonas-brand-guide.md, component-inventory.md, and any subproject PRD or TAD such as design-system-PRD.md). ADRs are exempt — they don't carry version numbers, they're immutable per §5.
     - **Major** stays `0` while a document is in draft/unaccepted status. It increments to `1` only when the document is explicitly accepted by the owner, and increments further only for changes significant enough to constitute a new baseline (owner's judgment, not automatic).
     - **Minor** increments for substantive, semantic content changes — a section rewritten, scope added or removed, a requirement changed.
     - **Patch** increments for typographical or other non-semantic edits — wording cleanup that doesn't change meaning, formatting fixes, broken links.
@@ -87,5 +87,5 @@ Three document types in this repository have a strict dependency order, not just
 
 ---
 
-*CLAUDE.md v1.1 — buzonas.dev-governance Repository*
+*CLAUDE.md v1.2 — buzonas.dev-governance Repository*
 *This file governs how AI assistants work in this repository specifically. For the site's implementation contract, see buzonas.dev's own CLAUDE.md.*
