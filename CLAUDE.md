@@ -25,6 +25,7 @@ This repository governs the `buzonas.dev` portfolio site and any future in-scope
 | [`portfolio-TAD.md`](docs/portfolio/portfolio-TAD.md) | Technical architecture — stack, repo structure, routing, CI/CD, environment topology | Low — changes when architecture changes |
 | [`portfolio-decision-backlog.md`](docs/portfolio/portfolio-decision-backlog.md) | Open questions and resolution history for the portfolio | Living — append as new questions surface |
 | [`design-system-PRD.md`](docs/design-system/design-system-PRD.md) | Design system product requirements — vision, audiences, release phases, open architectural questions | Low — changes when scope or priorities change |
+| [`design-system-TAD.md`](docs/design-system/design-system-TAD.md) | Design system technical architecture — topology, packages, substrate, theme layer, consumption contracts, release gates | Low — changes when architecture changes |
 | [`design-system-decision-backlog.md`](docs/design-system/design-system-decision-backlog.md) | Open architectural questions for the design system; tracks background from retired drafts | Living — rows resolved into ADRs as decisions are made |
 | [`ADRs.md`](docs/ADRs.md) | Index of architectural decisions | Append-only — grows over time |
 | [`docs/adr/*.md`](docs/adr/) | Individual MADR-format decision records, one file per decision | Append-only — never edit an accepted ADR's substance after the fact (see §5) |
