@@ -38,6 +38,9 @@
 | [ADR-025](docs/adr/ADR-025-design-system-component-style-delivery-scan-first.md) | Design System Component Style Delivery — Scan-First with Prebuilt Fallback | Accepted |
 | [ADR-026](docs/adr/ADR-026-design-system-rsc-contract-granular-client-boundaries.md) | Design System Server/Client (RSC) Contract — Library-Owned Granular Client Boundaries | Accepted |
 | [ADR-027](docs/adr/ADR-027-portfolio-design-system-boundary-and-migration.md) | Portfolio Site as Design-System Consumer — Boundary & Migration | Accepted |
+| [ADR-028](docs/adr/ADR-028-design-system-local-brand-theme-injection.md) | Design System Decoupled Brand-Theme Authoring — Local Theme Drop-Directory with Env Override | Accepted |
+| [ADR-029](docs/adr/ADR-029-design-system-package-publish-pipeline.md) | Design System Package-Publish Pipeline — Human-Gated Changesets Release-PR, Trunk-Based Batch | Accepted |
+| [ADR-030](docs/adr/ADR-030-design-system-release-gate-content.md) | Design System Release-Gate Content — Accessibility & Performance Verification | Accepted |
 
 ---
 
