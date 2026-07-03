@@ -41,6 +41,7 @@
 | [ADR-028](docs/adr/ADR-028-design-system-local-brand-theme-injection.md) | Design System Decoupled Brand-Theme Authoring — Local Theme Drop-Directory with Env Override | Accepted |
 | [ADR-029](docs/adr/ADR-029-design-system-package-publish-pipeline.md) | Design System Package-Publish Pipeline — Human-Gated Changesets Release-PR, Trunk-Based Batch | Accepted |
 | [ADR-030](docs/adr/ADR-030-design-system-release-gate-content.md) | Design System Release-Gate Content — Accessibility & Performance Verification | Accepted |
+| [ADR-031](docs/adr/ADR-031-design-system-package-build-tooling.md) | Design System Package Build Tooling — tsc for Per-Module ESM, Tailwind for Prebuilt CSS | Accepted |
 
 ---
 
